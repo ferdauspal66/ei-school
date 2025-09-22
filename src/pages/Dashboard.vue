@@ -31,8 +31,8 @@
                 @click="navigateToService(service.route)"
               >
                 <div class="service-icon">
-                  <component 
-                    :is="service.icon" 
+                  <component
+                    :is="service.icon"
                     v-if="$options.components[service.icon]"
                     size="24"
                   />
