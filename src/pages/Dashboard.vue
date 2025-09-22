@@ -241,10 +241,18 @@ export default {
 }
 
 .main-content {
+  margin-left: 280px; /* Sesuaikan dengan lebar sidebar */
   flex: 1;
   overflow-y: auto;
+  padding: 20px;
 }
 
+/* Ketika sidebar collapsed */
+.main-content.sidebar-collapsed {
+  margin-left: 80px;
+}
+
+/* Content Wrapper */
 .content-wrapper {
   padding: 20px;
   max-width: 1200px;

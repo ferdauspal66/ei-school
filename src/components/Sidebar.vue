@@ -18,15 +18,14 @@
         <h4 v-if="!isCollapsed" class="section-title">General</h4>
         <ul class="nav-list">
           <li class="nav-item">
-            <a
-              href="#"
+            <router-link
+              to="/dashboard"
               class="nav-link"
-              :class="{ active: currentRoute === 'home' }"
-              @click.prevent="navigateToHome"
+              :class="{ active: currentRoute === 'dashboard' }"
             >
               <Home class="nav-icon" />
               <span v-if="!isCollapsed" class="nav-text">Home</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link
@@ -206,6 +205,11 @@ export default {
     // Set initial path
     this.currentPath = this.$route.path
   },
+  methods: {
+    navigateToHome() {
+      this.$router.push('/dashboard')
+    },
+  },
 }
 </script>
 
@@ -214,9 +218,9 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 280px; /* Fixed width */
   height: 100vh;
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Consistent color */
   color: white;
   transition: width 0.3s ease;
   z-index: 1000;

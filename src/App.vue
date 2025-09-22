@@ -43,5 +43,20 @@ export default {
 </script>
 
 <style>
-/* Your global styles here */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+/* Layout consistency */
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
 </style>
