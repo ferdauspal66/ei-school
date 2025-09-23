@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '@/pages/Dashboard.vue'
 import Login from '@/pages/Login.vue'
+import Register from '@/pages/Register.vue'
 import Keuangan from '@/pages/Keuangan.vue' // Update the case to match file name
 import SantriSaya from '@/pages/SantriSaya.vue'
 
@@ -13,6 +14,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
   },
   {
     path: '/dashboard',

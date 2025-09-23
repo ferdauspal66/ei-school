@@ -252,7 +252,7 @@ export default {
     },
 
     goToLogin() {
-      this.$emit('go-to-login')
+      this.$router.push('/login')
     },
   },
 

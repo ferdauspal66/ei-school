@@ -70,7 +70,7 @@
             </div>
 
             <div class="d-flex gap-3 mb-3">
-              <button type="button" class="btn btn-outline-dark btn-lg w-50" @click="goToSignup">
+              <button type="button" class="btn btn-outline-dark btn-lg w-50" @click="goToRegister">
                 Sign up
               </button>
               <button type="submit" class="btn btn-dark btn-lg w-50" :disabled="isLoading">
@@ -175,8 +175,8 @@ export default {
       }
     },
 
-    goToSignup() {
-      this.$emit('go-to-register')
+    goToRegister() {
+      this.$router.push('/register')
     },
   },
 
